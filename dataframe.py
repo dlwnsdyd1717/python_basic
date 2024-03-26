@@ -20,7 +20,7 @@ def plot_matplotlib():        #streamlit 문법
     # Labeling axes and title
     ax.set_xlabel("year")
     ax.set_ylabel("lifeExp")
-    ax.set_title("Year vs. lifeExp)
+    ax.set_title("Year vs. lifeExp")
     
     st.pyplot(fig)         # 대시보드에 출력하는 코드
 
