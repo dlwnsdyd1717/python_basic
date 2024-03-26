@@ -20,14 +20,15 @@ def plot_matplotlib():        #streamlit 문법
     # Labeling axes and title
     ax.set_xlabel("year")
     ax.set_ylabel("lifeExp")
-    ax.set_title("Categorical Bar Plot")
+    ax.set_title("Year vs. lifeExp)
     
     st.pyplot(fig)         # 대시보드에 출력하는 코드
 
 def main():
     st.title("Data Display st.dataframe()")
     st.checkbox("Use container width", value=False, key = 'use_container_width')
-    
+
+    st.title("Maximum value poer column")
     df = load_data()
     st.dataframe(df, use_container_width=True)   # 대시보드에 표 삽입하는 코드
 
